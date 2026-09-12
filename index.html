@@ -17,7 +17,7 @@ html{scroll-behavior:smooth}
 body{margin:0;background:var(--ivory);color:var(--ink);font-family:Jost,system-ui,sans-serif;font-size:1rem;line-height:1.6;-webkit-font-smoothing:antialiased}
 a{color:inherit;text-decoration:none}
 :focus-visible{outline:2px solid var(--goldDeep);outline-offset:3px;border-radius:2px}
-h1,h2,h3,.brand-name{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;line-height:1.05;margin:0}
+h1,h2,h3,.brand-name,.num,.stat b,.step b,footer h4,.rev q{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;line-height:1.05;margin:0}
 h1{font-size:clamp(2.6rem,7vw,4.6rem)}
 h2{font-size:clamp(1.9rem,4.4vw,3rem)}
 h3{font-size:1.35rem;line-height:1.2}
@@ -36,8 +36,7 @@ header{position:sticky;top:0;z-index:50;background:rgba(23,18,16,.92);backdrop-f
 .brand{font-size:1.45rem;color:var(--ivory);letter-spacing:.02em}
 .brand small{display:block;font-size:.6rem;letter-spacing:.3em;color:var(--gold);text-transform:uppercase}
 .nav-links{display:flex;gap:1.4rem;font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;color:var(--mutD)}
-.nav-links a{padding:.4rem 0}
-.nav-links a:hover{color:var(--gold)}
+.nav-links a{padding:.4rem 0}.nav-links a:hover{color:var(--gold)}
 .nav-call{display:inline-flex;align-items:center;min-height:44px;border:1px solid rgba(194,160,94,.55);color:var(--ivory);padding:.5rem 1rem;border-radius:2px;font-size:.85rem;letter-spacing:.06em}
 .nav-call:hover{color:var(--gold);border-color:var(--gold)}
 .hero{background:linear-gradient(180deg,var(--ink) 0%,var(--ink2) 100%);color:var(--ivory);padding:64px 0 72px;overflow:hidden}
@@ -88,21 +87,21 @@ section{padding:76px 0}
 .svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 .svc{background:#fff;border:1px solid var(--line);padding:22px;border-top:2px solid var(--goldDeep)}
 .svc p{margin:.4rem 0 0;font-size:.92rem;color:var(--mutL)}
-.num{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.1rem;color:var(--goldDeep)}
+.num{font-size:1.1rem;color:var(--goldDeep)}
 .stats{background:var(--ink);color:var(--ivory)}
 .stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;text-align:center}
-.stat b{display:block;font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;font-size:clamp(2.4rem,5vw,3.6rem);color:var(--gold)}
+.stat b{display:block;font-size:clamp(2.4rem,5vw,3.6rem);color:var(--gold)}
 .stat span{font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;color:var(--mutD)}
 .rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 .rev{background:#fff;border:1px solid var(--line);padding:24px;display:flex;flex-direction:column;gap:.9rem}
 .rev .stars{color:var(--goldDeep);letter-spacing:.2em;font-size:.85rem}
-.rev q{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.18rem;line-height:1.4;quotes:"“" "”"}
+.rev q{font-size:1.18rem;line-height:1.4;quotes:"“" "”"}
 .rev .who{margin-top:auto;font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;color:var(--mutL)}
 .rev .who b{color:var(--ink);font-weight:500}
 .booking{background:linear-gradient(180deg,var(--wineDeep),var(--wine));color:var(--ivory)}
 .step-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:2rem 0}
 .step{border:1px solid rgba(246,241,231,.3);padding:22px}
-.step b{display:block;font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;font-size:1.3rem;color:var(--gold)}
+.step b{display:block;font-size:1.3rem;color:var(--gold)}
 .step p{margin:.5rem 0 0;font-size:.92rem;color:rgba(246,241,231,.85)}
 .book-note{font-size:.85rem;color:rgba(246,241,231,.75);border-left:2px solid var(--gold);padding-left:1rem;max-width:52ch}
 .visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
@@ -118,7 +117,7 @@ section{padding:76px 0}
 .hours .closed{color:var(--wine);font-weight:500}
 footer{background:var(--ink);color:var(--mutD);padding:44px 0 110px;font-size:.85rem}
 .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:2rem}
-footer h4{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;font-size:1.2rem;color:var(--ivory);margin:0 0 .6rem}
+footer h4{font-size:1.2rem;color:var(--ivory);margin:0 0 .6rem}
 footer a:hover{color:var(--gold)}
 .foot-links{list-style:none;margin:0;padding:0;display:grid;gap:.15rem}
 .foot-links a{display:inline-block;padding:.5rem 0}
@@ -153,221 +152,21 @@ html{scroll-behavior:auto}
 {"@context":"https://schema.org","@type":"ProfessionalService","name":"Royal Studio Ghaziabad","telephone":"+919818343451","url":"https://sharpsites-demo.github.io/royal-studio-ghaziabad-demo/","sameAs":["https://www.instagram.com/royalstudiogzb"],"address":{"@type":"PostalAddress","streetAddress":"103, New Gandhi Nagar, Ram Nagar, Nehru Nagar III","addressLocality":"Ghaziabad","addressRegion":"Uttar Pradesh","postalCode":"201001","addressCountry":"IN"},"geo":{"@type":"GeoCoordinates","latitude":28.6580875,"longitude":77.4373653},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Wednesday","Thursday","Friday","Saturday"],"opens":"09:00","closes":"21:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Sunday","opens":"09:00","closes":"21:30"}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.7","reviewCount":"250"}}
 </script>
 </head>
-<body>
-<header id="top">
-<div class="wrap nav">
-<a class="brand" href="#top" aria-label="Royal Studio Ghaziabad — home"><span class="brand-name">Royal Studio</span><small>Nehru Nagar · Ghaziabad</small></a>
-<nav class="nav-links" aria-label="Sections">
-<a href="#work">The Work</a><a href="#services">Services</a><a href="#reviews">Couples</a><a href="#visit">Visit</a>
-</nav>
-<a class="nav-call" href="tel:+919818343451">Call +91 98183 43451</a>
-</div>
-<section class="hero dark" aria-label="Introduction">
-<div class="wrap hero-grid">
-<div>
-<p class="eyebrow">Wedding photography · 83 years in Ghaziabad</p>
-<h1><span class="line">Your wedding, remembered</span> <span class="line">the way <em>it felt.</em></span></h1>
-<p class="sub hero-sub">Royal Studio has shot Ghaziabad's weddings for 83 years — rated <b style="color:var(--gold)">4.7★ by 250 couples and families</b> on Google. Send your date, and we'll reply with availability and our latest portfolio.</p>
-<div class="hero-ctas">
-<a class="btn btn-gold" href="https://wa.me/919818343451?text=Hi%20Royal%20Studio%2C%20I%27d%20like%20to%20check%20availability%20for%20a%20wedding%20date." rel="noopener">
-<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 11.5a8.5 8.5 0 0 1-12.4 7.5L3 21l2-5.4A8.5 8.5 0 1 1 21 11.5Z"/></svg>
-Check Your Date on WhatsApp</a>
-<a class="btn btn-ghost" href="#work">See the Work</a>
-</div>
-<p class="trust"><span><b>4.7★</b> Google rating</span><span><b>250</b> reviews</span><span><b>83</b> years behind the lens</span><span><b>Nehru Nagar</b> studio</span></p>
-</div>
-<div>
-<div class="ripple-host" id="rippleHost">
-<canvas class="ripple-source" id="rippleSource"></canvas>
-<div class="ripple-content" id="rippleContent">
-<div class="frames">
-<div class="frame f1" aria-label="Portfolio slot: the vows">
-<svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#f6f1e7" stroke-width="1.4" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3.5"/><path d="M12 3v5.5M19.8 16.5l-5.2-3M4.2 16.5l5.2-3"/></svg>
+<body><header id="top"><div class="wrap nav"><a class="brand" href="#top" aria-label="Royal Studio Ghaziabad — home"><span class="brand-name">Royal Studio</span><small>Nehru Nagar · Ghaziabad</small></a><nav class="nav-links" aria-label="Sections"><a href="#work">The Work</a><a href="#services">Services</a><a href="#reviews">Couples</a><a href="#visit">Visit</a></nav><a class="nav-call" href="tel:+919818343451">Call +91 98183 43451</a></div><section class="hero dark" aria-label="Introduction"><div class="wrap hero-grid"><div><p class="eyebrow">Wedding photography · 83 years in Ghaziabad</p><h1><span class="line">Your wedding, remembered</span> <span class="line">the way <em>it felt.</em></span></h1><p class="sub hero-sub">Royal Studio has shot Ghaziabad's weddings for 83 years — rated <b style="color:var(--gold)">4.7★ by 250 couples and families</b> on Google. Send your date, and we'll reply with availability and our latest portfolio.</p><div class="hero-ctas"><a class="btn btn-gold" href="https://wa.me/919818343451?text=Hi%20Royal%20Studio%2C%20I%27d%20like%20to%20check%20availability%20for%20a%20wedding%20date." rel="noopener"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 11.5a8.5 8.5 0 0 1-12.4 7.5L3 21l2-5.4A8.5 8.5 0 1 1 21 11.5Z"/></svg>
+Check Your Date on WhatsApp</a><a class="btn btn-ghost" href="#work">See the Work</a></div><p class="trust"><span><b>4.7★</b> Google rating</span><span><b>250</b> reviews</span><span><b>83</b> years behind the lens</span><span><b>Nehru Nagar</b> studio</span></p></div><div><div class="ripple-host" id="rippleHost"><canvas class="ripple-source" id="rippleSource"></canvas><div class="ripple-content" id="rippleContent"><div class="frames"><div class="frame f1" aria-label="Portfolio slot: the vows"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#f6f1e7" stroke-width="1.4" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3.5"/><path d="M12 3v5.5M19.8 16.5l-5.2-3M4.2 16.5l5.2-3"/></svg>
 The vows
-</div>
-<div class="frame f2" aria-label="Portfolio slot: the entry">
-<svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#f6f1e7" stroke-width="1.4" aria-hidden="true"><path d="M4 21V10a8 8 0 0 1 16 0v11M2 21h20M9 21v-5a3 3 0 0 1 6 0v5"/></svg>
+</div><div class="frame f2" aria-label="Portfolio slot: the entry"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#f6f1e7" stroke-width="1.4" aria-hidden="true"><path d="M4 21V10a8 8 0 0 1 16 0v11M2 21h20M9 21v-5a3 3 0 0 1 6 0v5"/></svg>
 The entry
-</div>
-<div class="frame f3" aria-label="Portfolio slot: the first dance">
-<svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#f6f1e7" stroke-width="1.4" aria-hidden="true"><path d="M12 3l1.8 4.6L18 9l-4.2 1.4L12 15l-1.8-4.6L6 9l4.2-1.4L12 3ZM19 16l.9 2.1L22 19l-2.1.9L19 22l-.9-2.1L16 19l2.1-.9L19 16Z"/></svg>
+</div><div class="frame f3" aria-label="Portfolio slot: the first dance"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#f6f1e7" stroke-width="1.4" aria-hidden="true"><path d="M12 3l1.8 4.6L18 9l-4.2 1.4L12 15l-1.8-4.6L6 9l4.2-1.4L12 3ZM19 16l.9 2.1L22 19l-2.1.9L19 22l-.9-2.1L16 19l2.1-.9L19 16Z"/></svg>
 First dance
-</div>
-<div class="frame f4" aria-label="Portfolio slot: the rings">
-<svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#f6f1e7" stroke-width="1.4" aria-hidden="true"><circle cx="9" cy="14" r="5"/><circle cx="15" cy="14" r="5"/><path d="M12 6l2-3h-4l2 3Z"/></svg>
+</div><div class="frame f4" aria-label="Portfolio slot: the rings"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#f6f1e7" stroke-width="1.4" aria-hidden="true"><circle cx="9" cy="14" r="5"/><circle cx="15" cy="14" r="5"/><path d="M12 6l2-3h-4l2 3Z"/></svg>
 The rings
-</div>
-</div>
-<div class="frame-wide">The album · printed in-house</div>
-</div>
-<canvas class="ripple-output" id="rippleOutput" aria-hidden="true"></canvas>
-</div>
-<p class="ripple-hint">Tap a frame · <b>watch the light ripple</b></p>
-</div>
-</div>
-</section>
-</header>
-
-<div class="ticker" aria-hidden="true">
-<div class="ticker-track">
-<span>Weddings</span><span>Engagements</span><span>Pre-wedding</span><span>Family portraits</span><span>In-house album printing</span><span>Framing</span><span>Photo booth</span><span>Weddings</span><span>Engagements</span><span>Pre-wedding</span><span>Family portraits</span><span>In-house album printing</span><span>Framing</span><span>Photo booth</span>
-</div>
-</div>
-
-<main>
-<section id="work" aria-label="Portfolio">
-<div class="wrap">
-<div class="sec-head">
-<div><p class="eyebrow">The portfolio</p><h2>Start with the work, not the brochure.</h2></div>
-<p class="sub" style="max-width:38ch">Every frame here will be hand-picked from real Royal Studio weddings and albums — the same work you'll get on your own day.</p>
-</div>
-<div class="work-grid">
-<article class="work-card" data-reveal><div class="work-visual wv1" role="img" aria-label="Wedding photography portfolio slot"><svg viewBox="0 0 24 24" fill="none" stroke="#f6f1e7" stroke-width="1.2" aria-hidden="true"><path d="M4 21V10a8 8 0 0 1 16 0v11M2 21h20M9 21v-5a3 3 0 0 1 6 0v5"/></svg></div><div class="work-body"><h3>Wedding days</h3><p>From the pheras to the farewell — the moments your family will revisit for generations.</p><span class="work-tag">Add real wedding photos</span></div></article>
-<article class="work-card" data-reveal><div class="work-visual wv2" role="img" aria-label="Engagement photography portfolio slot"><svg viewBox="0 0 24 24" fill="none" stroke="#f6f1e7" stroke-width="1.2" aria-hidden="true"><circle cx="9" cy="14" r="5"/><circle cx="15" cy="14" r="5"/><path d="M12 6l2-3h-4l2 3Z"/></svg></div><div class="work-body"><h3>Engagements</h3><p>Ring ceremonies and roka — intimate functions, photographed without the chaos.</p><span class="work-tag">Add real engagement photos</span></div></article>
-<article class="work-card" data-reveal><div class="work-visual wv3" role="img" aria-label="Pre-wedding photography portfolio slot"><svg viewBox="0 0 24 24" fill="none" stroke="#f6f1e7" stroke-width="1.2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M7 13a4 4 0 0 0 10 0M9 9.5h.01M15 9.5h.01"/></svg></div><div class="work-body"><h3>Pre-wedding</h3><p>Relaxed couple shoots around the city or in the studio, before the big week begins.</p><span class="work-tag">Add real pre-wedding photos</span></div></article>
-<article class="work-card" data-reveal><div class="work-visual wv4" role="img" aria-label="Family and baby photography portfolio slot"><svg viewBox="0 0 24 24" fill="none" stroke="#f6f1e7" stroke-width="1.2" aria-hidden="true"><circle cx="8" cy="8" r="3"/><circle cx="16.5" cy="9.5" r="2.5"/><path d="M3 20a5 5 0 0 1 10 0M13.5 20a4.5 4.5 0 0 1 7.5-3.4"/></svg></div><div class="work-body"><h3>Family &amp; baby</h3><p>The portraits grandparents frame — babies, milestones and full-family sittings.</p><span class="work-tag">Add real family portraits</span></div></article>
-<article class="work-card" data-reveal><div class="work-visual wv5" role="img" aria-label="Studio portrait portfolio slot"><svg viewBox="0 0 24 24" fill="none" stroke="#f6f1e7" stroke-width="1.2" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7l1.5-2.5h3L15 7M12 16.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Z"/></svg></div><div class="work-body"><h3>Studio portraits</h3><p>Controlled light, clean backgrounds — visa photos to formal family sittings.</p><span class="work-tag">Add real studio work</span></div></article>
-<article class="work-card" data-reveal><div class="work-visual wv6" role="img" aria-label="Album and framing portfolio slot"><svg viewBox="0 0 24 24" fill="none" stroke="#f6f1e7" stroke-width="1.2" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="1.5"/><path d="M8 3v18M4 8h4M4 13h4"/></svg></div><div class="work-body"><h3>Albums &amp; framing</h3><p>Shot, printed, bound and framed under one roof — our own lab, our own quality check.</p><span class="work-tag">Add real album spreads</span></div></article>
-<article class="ig-card" data-reveal>
-<div><p class="eyebrow" style="color:var(--gold)">The live feed</p><h3>Recent work, as it happens</h3><p style="font-size:.9rem;color:var(--mutD);margin:.5rem 0 0">Follow the latest weddings and behind-the-scenes from the studio floor.</p></div>
-<span class="work-tag" style="color:var(--gold);border-color:var(--gold)">Add Instagram grid</span>
-<a href="https://www.instagram.com/royalstudiogzb" rel="noopener" style="font-size:.9rem;letter-spacing:.06em">instagram.com/royalstudiogzb ↗</a>
-</article>
-</div>
-</div>
-</section>
-
-<section id="services" class="services" aria-label="Services">
-<div class="wrap">
-<div class="sec-head">
-<div><p class="eyebrow">Studio services</p><h2>One studio, the whole wedding covered.</h2></div>
-<p class="sub" style="max-width:38ch">Photography, printing and framing have lived under the same Nehru Nagar roof for 83 years — nothing leaves the building.</p>
-</div>
-<div class="svc-grid">
-<article class="svc" data-reveal><span class="num">01</span><h3>Wedding photography</h3><p>Full-function coverage from a team couples call "true professionals" — polite, prepared and unhurried.</p></article>
-<article class="svc" data-reveal><span class="num">02</span><h3>Engagement &amp; pre-wedding</h3><p>Smaller functions get the same care as the main day — candid photos and a family-friendly vibe on every set.</p></article>
-<article class="svc" data-reveal><span class="num">03</span><h3>Family, baby &amp; studio portraits</h3><p>From a baby's first sitting to the full family portrait — gentle direction, natural expressions.</p></article>
-<article class="svc" data-reveal><span class="num">04</span><h3>Photo lab &amp; digital printing</h3><p>An in-house lab and digital printing service — the same studio that shoots your day prints your albums.</p></article>
-<article class="svc" data-reveal><span class="num">05</span><h3>Framing &amp; poster shop</h3><p>Custom framing and poster printing on site, so the final piece matches the final photograph.</p></article>
-<article class="svc" data-reveal><span class="num">06</span><h3>Photo booth</h3><p>A set-up that keeps guests between ceremonies entertained — and gives everyone a keepsake.</p><span class="work-tag">Add final collection &amp; album details</span></article>
-</div>
-</div>
-</section>
-
-<section class="stats dark" aria-label="Studio in numbers">
-<div class="wrap stats-grid">
-<div class="stat" data-reveal><b data-count="83">0</b><span>years behind the lens</span></div>
-<div class="stat" data-reveal><b data-count="250">0</b><span>Google reviews</span></div>
-<div class="stat" data-reveal><b data-count="217">0</b><span>five-star reviews</span></div>
-<div class="stat" data-reveal><b data-count="4.7" data-dec="1">0</b><span>average rating</span></div>
-</div>
-</section>
-
-<section id="reviews" aria-label="Reviews">
-<div class="wrap">
-<div class="sec-head">
-<div><p class="eyebrow">Google reviews</p><h2>What couples say after the wedding.</h2></div>
-<p class="sub" style="max-width:38ch">Real words from real Google reviews — 217 of our 250 reviews are five stars.</p>
-</div>
-<div class="rev-grid">
-<article class="rev" data-reveal><span class="stars" aria-label="5 out of 5 stars">★★★★★</span><q>Rishabh and his team are true professionals… they went the extra mile to ensure they beautifully captured our most valuable and cherished moments.</q><p class="who"><b>Shantanu Chaudhary</b> · Google review</p></article>
-<article class="rev" data-reveal><span class="stars" aria-label="5 out of 5 stars">★★★★★</span><q>The team is super professional, creative, and attentive to detail… The photos are crisp, stunning, and exceeded my expectations.</q><p class="who"><b>Yashi Gupta</b> · Google review</p></article>
-<article class="rev" data-reveal><span class="stars" aria-label="5 out of 5 stars">★★★★★</span><q>The whole team is like a big family that has always embraced us and treated functions and moments as their own.</q><p class="who"><b>Dharini Sahni</b> · Google review</p></article>
-</div>
-<p class="work-tag" data-reveal style="margin-top:1.4rem">Add more Google reviews</p>
-</div>
-</section>
-
-<section id="booking" class="booking dark" aria-label="Booking">
-<div class="wrap">
-<p class="eyebrow">Booking your date</p>
-<h2>Booked in three messages.</h2>
-<div class="step-grid">
-<div class="step" data-reveal><b>1 · Send your date</b><p>Message us on WhatsApp deep link with prefilled "check availability" message.</p></div>
-<div class="step" data-reveal><b>2 · See the portfolio</b><p>We confirm availability and share our recent work, so you can judge the pictures before you commit.</p></div>
-<div class="step" data-reveal><b>3 · Plan the day</b><p>Visit the Nehru Nagar studio to finalise coverage, albums and framing for your functions.</p></div>
-</div>
-<p class="book-note" data-reveal>Add advance-booking policy — popular Ghaziabad wedding dates are reserved months ahead.</p>
-<div class="hero-ctas" style="margin-top:1.8rem" data-reveal>
-<a class="btn btn-gold" href="https://wa.me/919818343451?text=Hi%20Royal%20Studio%2C%20I%27d%20like%20to%20check%20availability%20for%20a%20wedding%20date." rel="noopener">Check Your Date on WhatsApp</a>
-<a class="btn btn-ghost" href="tel:+919818343451">Call the Studio</a>
-</div>
-</div>
-</section>
-
-<section id="visit" aria-label="Visit and contact">
-<div class="wrap">
-<div class="sec-head">
-<div><p class="eyebrow">Visit us</p><h2>Walk into the Nehru Nagar studio.</h2></div>
-<p class="sub" style="max-width:38ch">See sample albums in person, meet the team, and plan your functions face to face.</p>
-</div>
-<div class="visit-grid">
-<div class="panel" data-reveal>
-<h3>Contact</h3>
-<div class="vrow"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M21 11.5a8.5 8.5 0 0 1-12.4 7.5L3 21l2-5.4A8.5 8.5 0 1 1 21 11.5Z"/></svg><span><a href="https://wa.me/919818343451" rel="noopener">WhatsApp +91 98183 43451</a></span></div>
-<div class="vrow"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2Z"/></svg><span><a href="tel:+919818343451">Call +91 98183 43451</a></span></div>
-<div class="vrow"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><span>103, New Gandhi Nagar, Ram Nagar, Nehru Nagar III, Ghaziabad, Uttar Pradesh 201001</span></div>
-<div class="vrow"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span><a href="https://www.google.com/maps/search/?api=1&amp;query=Royal%20Studio%20Ghaziabad&amp;query_place_id=ChIJh46sDMXxDDkRt8ZKJpMDCAI" rel="noopener">Get directions ↗</a></span></div>
-<div class="map-slot">Add Google Maps embed</div>
-</div>
-<div class="panel" data-reveal>
-<h3>Studio hours</h3>
-<dl class="hours">
-<div class="vrow"><dt>Monday</dt><dd>9:00 AM – 9:00 PM</dd></div>
-<div class="vrow"><dt>Tuesday</dt><dd class="closed">Closed</dd></div>
-<div class="vrow"><dt>Wed – Sat</dt><dd>9:00 AM – 9:00 PM</dd></div>
-<div class="vrow"><dt>Sunday</dt><dd>9:00 AM – 9:30 PM</dd></div>
-</dl>
-<p class="sub" style="font-size:.85rem;margin-top:1rem">Wheelchair-accessible seating available. Walk-ins welcome for portraits and printing; weddings are best planned over a scheduled visit.</p>
-<span class="work-tag">Add the studio's story in the owners' words</span>
-</div>
-</div>
-</div>
-</section>
-</main>
-
-<footer>
-<div class="wrap">
-<div class="foot-grid">
-<div>
-<h4>Royal Studio Ghaziabad</h4>
-<p style="margin:.4rem 0 0">Wedding photography, albums, printing and framing — 83 years in Nehru Nagar, Ghaziabad.</p>
-</div>
-<div>
-<h4>Explore</h4>
-<ul class="foot-links">
-<li><a href="#work">The Work</a></li>
-<li><a href="#services">Services</a></li>
-<li><a href="#reviews">Couples</a></li>
-<li><a href="#booking">Booking</a></li>
-<li><a href="#visit">Visit</a></li>
-</ul>
-</div>
-<div>
-<h4>Reach us</h4>
-<ul class="foot-links">
-<li><a href="tel:+919818343451">+91 98183 43451</a></li>
-<li><a href="https://wa.me/919818343451" rel="noopener">WhatsApp</a></li>
-<li><a href="https://www.instagram.com/royalstudiogzb" rel="noopener">Instagram ↗</a></li>
-</ul>
-</div>
-</div>
-<p class="copy">© 2026 Royal Studio Ghaziabad · 103, New Gandhi Nagar, Ram Nagar, Nehru Nagar III, Ghaziabad 201001</p>
-</div>
-</footer>
-
-<div class="mobbar" role="navigation" aria-label="Quick contact">
-<a class="mb-call" href="tel:+919818343451"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2Z"/></svg>Call the studio</a>
-<a class="mb-wa" href="https://wa.me/919818343451?text=Hi%20Royal%20Studio%2C%20I%27d%20like%20to%20check%20availability%20for%20a%20wedding%20date." rel="noopener"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 11.5a8.5 8.5 0 0 1-12.4 7.5L3 21l2-5.4A8.5 8.5 0 1 1 21 11.5Z"/></svg>WhatsApp your date</a>
-</div>
-<a class="wa-pill" href="https://wa.me/919818343451?text=Hi%20Royal%20Studio%2C%20I%27d%20like%20to%20check%20availability%20for%20a%20wedding%20date." rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 11.5a8.5 8.5 0 0 1-12.4 7.5L3 21l2-5.4A8.5 8.5 0 1 1 21 11.5Z"/></svg>WhatsApp your date</a>
-
-<!-- Ripple: Canvas UI (canvasui.dev, MIT) -->
+</div></div><div class="frame-wide">The album · printed in-house</div></div><canvas class="ripple-output" id="rippleOutput" aria-hidden="true"></canvas></div><p class="ripple-hint">Tap a frame · <b>watch the light ripple</b></p></div></div></section></header><div class="ticker" aria-hidden="true"><div class="ticker-track"><span>Weddings</span><span>Engagements</span><span>Pre-wedding</span><span>Family portraits</span><span>In-house album printing</span><span>Framing</span><span>Photo booth</span><span>Weddings</span><span>Engagements</span><span>Pre-wedding</span><span>Family portraits</span><span>In-house album printing</span><span>Framing</span><span>Photo booth</span></div></div><main><section id="work" aria-label="Portfolio"><div class="wrap"><div class="sec-head"><div><p class="eyebrow">The portfolio</p><h2>Start with the work, not the brochure.</h2></div><p class="sub" style="max-width:38ch">Every frame here will be hand-picked from real Royal Studio weddings and albums — the same work you'll get on your own day.</p></div><div class="work-grid"><article class="work-card" data-reveal><div class="work-visual wv1" role="img" aria-label="Wedding photography portfolio slot"><svg viewBox="0 0 24 24" fill="none" stroke="#f6f1e7" stroke-width="1.2" aria-hidden="true"><path d="M4 21V10a8 8 0 0 1 16 0v11M2 21h20M9 21v-5a3 3 0 0 1 6 0v5"/></svg></div><div class="work-body"><h3>Wedding days</h3><p>From the pheras to the farewell — the moments your family will revisit for generations.</p><span class="work-tag">Add real wedding photos</span></div></article><article class="work-card" data-reveal><div class="work-visual wv2" role="img" aria-label="Engagement photography portfolio slot"><svg viewBox="0 0 24 24" fill="none" stroke="#f6f1e7" stroke-width="1.2" aria-hidden="true"><circle cx="9" cy="14" r="5"/><circle cx="15" cy="14" r="5"/><path d="M12 6l2-3h-4l2 3Z"/></svg></div><div class="work-body"><h3>Engagements</h3><p>Ring ceremonies and roka — intimate functions, photographed without the chaos.</p><span class="work-tag">Add real engagement photos</span></div></article><article class="work-card" data-reveal><div class="work-visual wv3" role="img" aria-label="Pre-wedding photography portfolio slot"><svg viewBox="0 0 24 24" fill="none" stroke="#f6f1e7" stroke-width="1.2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M7 13a4 4 0 0 0 10 0M9 9.5h.01M15 9.5h.01"/></svg></div><div class="work-body"><h3>Pre-wedding</h3><p>Relaxed couple shoots around the city or in the studio, before the big week begins.</p><span class="work-tag">Add real pre-wedding photos</span></div></article><article class="work-card" data-reveal><div class="work-visual wv4" role="img" aria-label="Family and baby photography portfolio slot"><svg viewBox="0 0 24 24" fill="none" stroke="#f6f1e7" stroke-width="1.2" aria-hidden="true"><circle cx="8" cy="8" r="3"/><circle cx="16.5" cy="9.5" r="2.5"/><path d="M3 20a5 5 0 0 1 10 0M13.5 20a4.5 4.5 0 0 1 7.5-3.4"/></svg></div><div class="work-body"><h3>Family &amp; baby</h3><p>The portraits grandparents frame — babies, milestones and full-family sittings.</p><span class="work-tag">Add real family portraits</span></div></article><article class="work-card" data-reveal><div class="work-visual wv5" role="img" aria-label="Studio portrait portfolio slot"><svg viewBox="0 0 24 24" fill="none" stroke="#f6f1e7" stroke-width="1.2" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7l1.5-2.5h3L15 7M12 16.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Z"/></svg></div><div class="work-body"><h3>Studio portraits</h3><p>Controlled light, clean backgrounds — visa photos to formal family sittings.</p><span class="work-tag">Add real studio work</span></div></article><article class="work-card" data-reveal><div class="work-visual wv6" role="img" aria-label="Album and framing portfolio slot"><svg viewBox="0 0 24 24" fill="none" stroke="#f6f1e7" stroke-width="1.2" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="1.5"/><path d="M8 3v18M4 8h4M4 13h4"/></svg></div><div class="work-body"><h3>Albums &amp; framing</h3><p>Shot, printed, bound and framed under one roof — our own lab, our own quality check.</p><span class="work-tag">Add real album spreads</span></div></article><article class="ig-card" data-reveal><div><p class="eyebrow" style="color:var(--gold)">The live feed</p><h3>Recent work, as it happens</h3><p style="font-size:.9rem;color:var(--mutD);margin:.5rem 0 0">Follow the latest weddings and behind-the-scenes from the studio floor.</p></div><span class="work-tag" style="color:var(--gold);border-color:var(--gold)">Add Instagram grid</span><a href="https://www.instagram.com/royalstudiogzb" rel="noopener" style="font-size:.9rem;letter-spacing:.06em">instagram.com/royalstudiogzb ↗</a></article></div></div></section><section id="services" class="services" aria-label="Services"><div class="wrap"><div class="sec-head"><div><p class="eyebrow">Studio services</p><h2>One studio, the whole wedding covered.</h2></div><p class="sub" style="max-width:38ch">Photography, printing and framing have lived under the same Nehru Nagar roof for 83 years — nothing leaves the building.</p></div><div class="svc-grid"><article class="svc" data-reveal><span class="num">01</span><h3>Wedding photography</h3><p>Full-function coverage from a team couples call "true professionals" — polite, prepared and unhurried.</p></article><article class="svc" data-reveal><span class="num">02</span><h3>Engagement &amp; pre-wedding</h3><p>Smaller functions get the same care as the main day — candid photos and a family-friendly vibe on every set.</p></article><article class="svc" data-reveal><span class="num">03</span><h3>Family, baby &amp; studio portraits</h3><p>From a baby's first sitting to the full family portrait — gentle direction, natural expressions.</p></article><article class="svc" data-reveal><span class="num">04</span><h3>Photo lab &amp; digital printing</h3><p>An in-house lab and digital printing service — the same studio that shoots your day prints your albums.</p></article><article class="svc" data-reveal><span class="num">05</span><h3>Framing &amp; poster shop</h3><p>Custom framing and poster printing on site, so the final piece matches the final photograph.</p></article><article class="svc" data-reveal><span class="num">06</span><h3>Photo booth</h3><p>A set-up that keeps guests between ceremonies entertained — and gives everyone a keepsake.</p><span class="work-tag">Add final collection &amp; album details</span></article></div></div></section><section class="stats dark" aria-label="Studio in numbers"><div class="wrap stats-grid"><div class="stat" data-reveal><b data-count="83">0</b><span>years behind the lens</span></div><div class="stat" data-reveal><b data-count="250">0</b><span>Google reviews</span></div><div class="stat" data-reveal><b data-count="217">0</b><span>five-star reviews</span></div><div class="stat" data-reveal><b data-count="4.7" data-dec="1">0</b><span>average rating</span></div></div></section><section id="reviews" aria-label="Reviews"><div class="wrap"><div class="sec-head"><div><p class="eyebrow">Google reviews</p><h2>What couples say after the wedding.</h2></div><p class="sub" style="max-width:38ch">Real words from real Google reviews — 217 of our 250 reviews are five stars.</p></div><div class="rev-grid"><article class="rev" data-reveal><span class="stars" aria-label="5 out of 5 stars">★★★★★</span><q>Rishabh and his team are true professionals… they went the extra mile to ensure they beautifully captured our most valuable and cherished moments.</q><p class="who"><b>Shantanu Chaudhary</b> · Google review</p></article><article class="rev" data-reveal><span class="stars" aria-label="5 out of 5 stars">★★★★★</span><q>The team is super professional, creative, and attentive to detail… The photos are crisp, stunning, and exceeded my expectations.</q><p class="who"><b>Yashi Gupta</b> · Google review</p></article><article class="rev" data-reveal><span class="stars" aria-label="5 out of 5 stars">★★★★★</span><q>The whole team is like a big family that has always embraced us and treated functions and moments as their own.</q><p class="who"><b>Dharini Sahni</b> · Google review</p></article></div><p class="work-tag" data-reveal style="margin-top:1.4rem">Add more Google reviews</p></div></section><section id="booking" class="booking dark" aria-label="Booking"><div class="wrap"><p class="eyebrow">Booking your date</p><h2>Booked in three messages.</h2><div class="step-grid"><div class="step" data-reveal><b>1 · Send your date</b><p>Message us on WhatsApp with your wedding date and venue. A real person from the studio replies.</p></div><div class="step" data-reveal><b>2 · See the portfolio</b><p>We confirm availability and share our recent work, so you can judge the pictures before you commit.</p></div><div class="step" data-reveal><b>3 · Plan the day</b><p>Visit the Nehru Nagar studio to finalise coverage, albums and framing for your functions.</p></div></div><p class="book-note" data-reveal>Add advance-booking policy — popular Ghaziabad wedding dates are reserved months ahead.</p><div class="hero-ctas" style="margin-top:1.8rem" data-reveal><a class="btn btn-gold" href="https://wa.me/919818343451?text=Hi%20Royal%20Studio%2C%20I%27d%20like%20to%20check%20availability%20for%20a%20wedding%20date." rel="noopener">Check Your Date on WhatsApp</a><a class="btn btn-ghost" href="tel:+919818343451">Call the Studio</a></div></div></section><section id="visit" aria-label="Visit and contact"><div class="wrap"><div class="sec-head"><div><p class="eyebrow">Visit us</p><h2>Walk into the Nehru Nagar studio.</h2></div><p class="sub" style="max-width:38ch">See sample albums in person, meet the team, and plan your functions face to face.</p></div><div class="visit-grid"><div class="panel" data-reveal><h3>Contact</h3><div class="vrow"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M21 11.5a8.5 8.5 0 0 1-12.4 7.5L3 21l2-5.4A8.5 8.5 0 1 1 21 11.5Z"/></svg><span><a href="https://wa.me/919818343451" rel="noopener">WhatsApp +91 98183 43451</a></span></div><div class="vrow"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2Z"/></svg><span><a href="tel:+919818343451">Call +91 98183 43451</a></span></div><div class="vrow"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><span>103, New Gandhi Nagar, Ram Nagar, Nehru Nagar III, Ghaziabad, Uttar Pradesh 201001</span></div><div class="vrow"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span><a href="https://www.google.com/maps/search/?api=1&amp;query=Royal%20Studio%20Ghaziabad&amp;query_place_id=ChIJh46sDMXxDDkRt8ZKJpMDCAI" rel="noopener">Get directions ↗</a></span></div><div class="map-slot">Add Google Maps embed</div></div><div class="panel" data-reveal><h3>Studio hours</h3><dl class="hours"><div class="vrow"><dt>Monday</dt><dd>9:00 AM – 9:00 PM</dd></div><div class="vrow"><dt>Tuesday</dt><dd class="closed">Closed</dd></div><div class="vrow"><dt>Wed – Sat</dt><dd>9:00 AM – 9:00 PM</dd></div><div class="vrow"><dt>Sunday</dt><dd>9:00 AM – 9:30 PM</dd></div></dl><p class="sub" style="font-size:.85rem;margin-top:1rem">Wheelchair-accessible seating available. Walk-ins welcome for portraits and printing; weddings are best planned over a scheduled visit.</p><span class="work-tag">Add the studio's story in the owners' words</span></div></div></div></section></main><footer><div class="wrap"><div class="foot-grid"><div><h4>Royal Studio Ghaziabad</h4><p style="margin:.4rem 0 0">Wedding photography, albums, printing and framing — 83 years in Nehru Nagar, Ghaziabad.</p></div><div><h4>Explore</h4><ul class="foot-links"><li><a href="#work">The Work</a></li><li><a href="#services">Services</a></li><li><a href="#reviews">Couples</a></li><li><a href="#booking">Booking</a></li><li><a href="#visit">Visit</a></li></ul></div><div><h4>Reach us</h4><ul class="foot-links"><li><a href="tel:+919818343451">+91 98183 43451</a></li><li><a href="https://wa.me/919818343451" rel="noopener">WhatsApp</a></li><li><a href="https://www.instagram.com/royalstudiogzb" rel="noopener">Instagram ↗</a></li></ul></div></div><p class="copy">© 2026 Royal Studio Ghaziabad · 103, New Gandhi Nagar, Ram Nagar, Nehru Nagar III, Ghaziabad 201001</p></div></footer><div class="mobbar" role="navigation" aria-label="Quick contact"><a class="mb-call" href="tel:+919818343451"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2Z"/></svg>Call the studio</a><a class="mb-wa" href="https://wa.me/919818343451?text=Hi%20Royal%20Studio%2C%20I%27d%20like%20to%20check%20availability%20for%20a%20wedding%20date." rel="noopener"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 11.5a8.5 8.5 0 0 1-12.4 7.5L3 21l2-5.4A8.5 8.5 0 1 1 21 11.5Z"/></svg>WhatsApp your date</a></div><a class="wa-pill" href="https://wa.me/919818343451?text=Hi%20Royal%20Studio%2C%20I%27d%20like%20to%20check%20availability%20for%20a%20wedding%20date." rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 11.5a8.5 8.5 0 0 1-12.4 7.5L3 21l2-5.4A8.5 8.5 0 1 1 21 11.5Z"/></svg>WhatsApp your date</a><!-- Ripple: Canvas UI (canvasui.dev, MIT) -->
 <script>
 (function(){"use strict";
 var MAX_RIPPLES=12,BASE_SPEED=340;
 var VERT="#version 300 es\nprecision highp float;\nlayout(location=0) in vec2 aPos;\nout vec2 vUv;\nvoid main(){vUv=aPos*0.5+0.5;gl_Position=vec4(aPos,0.0,1.0);}";
-var FRAG="#version 300 es\nprecision highp float;\nin vec2 vUv;\nout vec4 outColor;\nuniform sampler2D uContent;\nuniform vec2 uResolution;\nuniform vec4 uRipples[12];\nuniform int uCount;\nuniform float uSpeed;\nuniform float uWavelength;\nuniform float uWidth;\nuniform float uDecay;\nuniform float uRefraction;\nuniform float uDispersion;\nuniform float uShine;\nuniform float uHasContent;\nuniform float uMaxX;\nvec4 page(vec2 p){p.x=clamp(p.x,0.0005,uMaxX-0.0005);p.y=clamp(p.y,0.0005,0.9995);return texture(uContent,p);}\nvoid main(){\n vec2 pUv=vec2(vUv.x,1.0-vUv.y);\n vec2 frag=pUv*uResolution;\n vec2 grad=vec2(0.0);\n float k=6.28318530718/uWavelength;\n float w2=uWidth*uWidth;\n for(int i=0;i<12;i++){\n  if(i>=uCount)break;\n  vec4 rp=uRipples[i];\n  vec2 dv=frag-rp.xy;\n  float r=length(dv);\n  float front=uSpeed*rp.z;\n  float s=r-front;\n  float env=exp(-s*s/w2)*exp(-uDecay*rp.z)*rp.w;\n  env*=smoothstep(0.0,0.08,rp.z);\n  env*=inversesqrt(1.0+front/max(uWavelength,1.0)*0.2);\n  if(env<0.0015)continue;\n  float dh=(k*cos(s*k)-2.0*s/w2*sin(s*k))*env;\n  grad+=dv/max(r,1.0)*dh*uWavelength*0.16;\n }\n float g=dot(grad,vec2(-0.55,-0.8));\n float glint=pow(clamp(g*2.2,0.0,1.0),2.0)*uShine;\n float shade=pow(clamp(-g*1.6,0.0,1.0),2.0)*uShine*0.3;\n if(uHasContent<0.5){float a=clamp(glint*0.9+shade*0.5,0.0,0.85);outColor=vec4(vec3(glint*0.9),a);return;}\n vec2 offs=grad*uRefraction/desired;\n vec3 col;\n if(uDispersion>0.001){float d=uDispersion*0.35;col=vec3(page(pUv+offs*(1.0+d)).r,page(pUv+offs).g,page(pUv+offs*(1.0-d)).b);}\n else{col=page(pUv+offs).rgb;}\n col+=glint;\n col*=1.0-shade;\n outColor=vec4(col,1.0);}";
+var FRAG="#version 300 es\nprecision highp float;\nin vec2 vUv;\nout vec4 outColor;\nuniform sampler2D uContent;\nuniform vec2 uResolution;\nuniform vec4 uRipples[12];\nuniform int uCount;\nuniform float uSpeed;\nuniform float uWavelength;\nuniform float uWidth;\nuniform float uDecay;\nuniform float uRefraction;\nuniform float uDispersion;\nuniform float uShine;\nuniform float uHasContent;\nuniform float uMaxX;\nvec4 page(vec2 p){p.x=clamp(p.x,0.0005,uMaxX-0.0005);p.y=clamp(p.y,0.0005,0.9995);return texture(uContent,p);}\nvoid main(){\n vec2 pUv=vec2(vUv.x,1.0-vUv.y);\n vec2 frag=pUv*uResolution;\n vec2 grad=vec2(0.0);\n float k=6.28318530718/uWavelength;\n float w2=uWidth*uWidth;\n for(int i=0;i<12;i++){\n  if(i>=uCount)break;\n  vec4 rp=uRipples[i];\n  vec2 dv=frag-rp.xy;\n  float r=length(dv);\n  float front=uSpeed*rp.z;\n  float s=r-front;\n  float env=exp(-s*s/w2)*exp(-uDecay*rp.z)*rp.w;\n  env*=smoothstep(0.0,0.08,rp.z);\n  env*=inversesqrt(1.0+front/max(uWavelength,1.0)*0.2);\n  if(env<0.0015)continue;\n  float dh=(k*cos(s*k)-2.0*s/w2*sin(s*k))*env;\n  grad+=dv/max(r,1.0)*dh*uWavelength*0.16;\n }\n float g=dot(grad,vec2(-0.55,-0.8));\n float glint=pow(clamp(g*2.2,0.0,1.0),2.0)*uShine;\n float shade=pow(clamp(-g*1.6,0.0,1.0),2.0)*uShine*0.3;\n if(uHasContent<0.5){float a=clamp(glint*0.9+shade*0.5,0.0,0.85);outColor=vec4(vec3(glint*0.9),a);return;}\n vec2 offs=grad*uRefraction/uResolution;\n vec3 col;\n if(uDispersion>0.001){float d=uDispersion*0.35;col=vec3(page(pUv+offs*(1.0+d)).r,page(pUv+offs).g,page(pUv+offs*(1.0-d)).b);}\n else{col=page(pUv+offs).rgb;}\n col+=glint;\n col*=1.0-shade;\n outColor=vec4(col,1.0);\n}";
 function supportsHtmlInCanvas(){
  var probe=document.createElement("canvas");
  var ctx=probe.getContext("2d");
